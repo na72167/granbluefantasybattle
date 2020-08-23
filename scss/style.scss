@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+}
+
+//変数関係
+$font-color_default: #777;
+$font-color_date: #e37b89;
+$color_corp: #e3a8b1;
+$font-color_sub1: #b6a489;
+
+$site-width: 600px;
+
+$font-size_s: 12px;
+$font-size_m: 14px;
+$font-size_default: 16px;
+$font-size_l: 18px;
+$font-size_xl: 24px;
+$font-size_xxl: 30px;
+$font-size_3l: 38px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+$space_3l: 40px;
+
+// マップ型変数を使うと便利
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// ヘッダー関係
+header{
+    height: 80px;
+    width: $site-width;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// メインコンテンツ
+main{
+    height: 840px;
+    width: $site-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// メイン画面
+.main-screen{
+    height: 450px;
+    background-color: blue;
+    width: $site-width;
+}
+
+//操作パネル
+.operation{
+    height: 280px;
+    background-color: green;
+    width: $site-width;
+        & .figure-wrap{
+            position: relative;
+            top:20px;
+            width:440px;
+            overflow: hidden;
+            & .figure-panel{
+                float: left;
+                margin-left: 10px;
+            }
+        }
+}
+
+//貢献度
+.contribution{
+    height: 110px;
+    background-color: yellow;
+    width: $site-width;
+}
+
+//フッター関係
+footer{
+    height: 80px;
+    width: $site-width;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
