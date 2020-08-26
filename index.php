@@ -13,24 +13,68 @@
     </header>
     <main>
         <article class="main-screen">
-            メイン画面
-        </article>
-        <aside class="operation">
-            <div class="figure-wrap">
-                <lavel class="figure-panel">
-                    <img src="img/figure_1.jpg">
-                </lavel>
-                <lavel class="figure-panel">
-                    <img src="img/figure_2.jpg">
-                </lavel>
-                <lavel class="figure-panel">
-                    <img src="img/figure_3.jpg">
-                </lavel>
-                <lavel class="figure-panel">
-                    <img src="img/figure_4.jpg">
-                </lavel>
+            <!-- 敵側画面 -->
+            <div class="enemy-wrap">
+                <label class="#">
+                    <!-- <img src="img/enemy_1.png"> -->
+                </label>
             </div>
-        </aside>
+            <!-- 味方側画面 -->
+            <div class="ally-wrap">
+                <label class="ally-panel">
+                    <img src="img/motion_1.png">
+                </label>
+                <label class="ally-panel">
+                    <img src="img/motion_2.png">
+                </label>
+                <label class="ally-panel">
+                    <img src="img/motion_3.png">
+                </label>
+                <label class="ally-panel">
+                    <img src="img/motion_4.png">
+                </label>
+            </div>
+        </article>
+        <!-- 操作画面 -->
+        <div class="operation">
+            <!-- キャラクター画面 -->
+            <div class="figure-wrap">
+                <label class="figure-panel">
+                    <img src="img/figure_1.jpg">
+                </label>
+                <label class="figure-panel">
+                    <img src="img/figure_2.jpg">
+                </label>
+                <label class="figure-panel">
+                    <img src="img/figure_3.jpg">
+                </label>
+                <label class="figure-panel">
+                    <img src="img/figure_4.jpg">
+                </label>
+                <!-- 召喚画面 -->
+                <span class="summon-bar">
+                    <label class="summon-panel summon-1">
+                        <img src="img/summon_2.jpg">
+                    </label>
+                    <label class="summon-panel summon-2">
+                        <img src="img/summon_empty.jpg">
+                    </label>
+                    <label class="summon-panel summon-3">
+                        <img src="img/summon_empty.jpg">
+                    </label>
+                    <label class="summon-panel summon-4">
+                        <img src="img/summon_empty.jpg">
+                    </label>
+                    <label class="summon-panel summon-5">
+                        <img src="img/summon_empty.jpg">
+                    </label>
+                    <label class="summon-panel summon-6">
+                        <img src="img/summon_1.jpg">
+                    </label>
+                </span>
+            </div>
+        </div>
+        <!-- 貢献度画面 -->
         <aside class="contribution">
             貢献度
         </aside>
