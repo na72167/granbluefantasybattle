@@ -3,43 +3,67 @@ body {
 
 header {
   height: 80px;
-  width: 600px;
+  width: 620px;
   background-color: red;
   margin-left: auto;
   margin-right: auto; }
 
 main {
   height: 840px;
-  width: 600px;
+  width: 620px;
   margin-left: auto;
   margin-right: auto; }
 
 .main-screen {
   height: 450px;
   background-color: blue;
-  width: 600px; }
+  width: 620px;
+  overflow: hidden; }
 
 .operation {
   height: 280px;
   background-color: green;
-  width: 600px; }
+  width: 620px; }
   .operation .figure-wrap {
     position: relative;
     top: 20px;
-    width: 440px;
-    overflow: hidden; }
+    float: left; }
     .operation .figure-wrap .figure-panel {
-      float: left;
+      height: 100%;
       margin-left: 10px; }
+  .operation .summon-bar {
+    position: absolute;
+    left: 450px;
+    width: 300px; }
+    .operation .summon-bar .summon-panel {
+      position: absolute; }
+      .operation .summon-bar .summon-panel.summon-1 {
+        left: 10px;
+        z-index: 6; }
+      .operation .summon-bar .summon-panel.summon-2 {
+        left: 20px;
+        z-index: 5; }
+      .operation .summon-bar .summon-panel.summon-3 {
+        left: 30px;
+        z-index: 4; }
+      .operation .summon-bar .summon-panel.summon-4 {
+        left: 40px;
+        z-index: 3; }
+      .operation .summon-bar .summon-panel.summon-5 {
+        left: 50px;
+        z-index: 2; }
+      .operation .summon-bar .summon-panel.summon-6 {
+        left: 60px;
+        z-index: 1; }
 
 .contribution {
   height: 110px;
   background-color: yellow;
-  width: 600px; }
+  width: 620px; }
 
 footer {
   height: 80px;
-  width: 600px;
+  width: 620px;
   background-color: black;
   margin-left: auto;
   margin-right: auto; }
